@@ -13,11 +13,11 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     *{
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family:Verdana;
     }
     .container{
-      height: 400px;
-      width: 600px;
+      height: 420px;
+      width: 650px;
       background-color: white;
       box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.425);
       margin: auto;
@@ -26,15 +26,15 @@
     }
     .one{
       position: absolute;
-      height: 400px;
+      height: 420px;
       width: 300px;
       border-radius: 6%;
       background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     }
     .circle{
       position: absolute;
-      height: 150px;
-      width: 150px;
+      height: 160px;
+      width: 160px;
       background-image:linear-gradient( hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
       border-radius: 50%;
       margin-top: 5px;
@@ -52,51 +52,95 @@
     }
     .of{
       color: hsla(0, 1%, 86%, 0.856);
-      font-size: 15px;
+      font-size: 18px;
       margin-top: -40px;
     }
     .great{
       margin-top: 200px;
       color: white;
-      font-size: 35px;
+      font-size: 30px;
       font-weight: 600;
     }
     .para{
       color: hsla(0, 1%, 86%, 0.856);
-      font-size: 17px;
-      margin: 0 15px 10px 15px;
+      font-size: 15px;
+      margin: -10px 40px 20px 40px;
     }
     .sum{
-      margin-left: 320px;
+      margin-left: 340px;
       position: absolute;
-      color:darkblue;
+      color:hsl(224, 30%, 27%);
     }
     .result1,.result2,.result3,.result4{
       height: 50px;
-      width: 200px;
+      width: 270px;
       position: absolute;
-      border-radius: 5%;
-      margin-left: 320px;
+      border-radius: 10px;
+      margin-left: 340px;
     }
     .result1{
+      color: rgba(240, 0, 40, 0.815);
       background-color: rgba(253, 161, 176, 0.425);
       margin-top: 70px;
     }
     .result2{
+      color: rgb(253, 207, 2);
       background-color: rgba(244, 245, 169, 0.425);
       margin-top: 130px;
     }
     .result3{
+      color: rgba(1, 172, 78, 0.788);
       background-color: rgba(192, 255, 195, 0.425);
       margin-top: 190px;
     }
     .result4{
+      color: rgba(3, 0, 155, 0.822);
       background-color: rgba(193, 192, 255, 0.425);
       margin-top: 250px;
     }
     img{
-      margin-right: 150px;
+      margin-right: 210px;
       margin-top: 15px;
+    }
+    .icon{
+      font-size: 15px;
+      margin-left: 50px;
+      margin-top: -22px;
+      text-align: justify;
+    }
+    button{
+      height: 50px;
+      width: 250px;
+      position: absolute;
+      margin-top: 330px;
+      margin-left: 25px;
+      border-radius: 30px;
+      background-color: hsl(224, 30%, 27%);
+      border: hidden;
+      cursor: pointer;
+    }
+    button:active{
+      transform: scale(0.9);
+      transition: 0.5s;
+    }
+    .con{
+      color: white;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .mark{
+      font-size: 17px;
+      position: absolute;
+      color: hsl(224, 30%, 27%);
+      margin-left: 170px;
+      margin-top: -35px;
+    }
+    .outof{
+      margin-left: 198px;
+      margin-top: -35px;
+      font-size: 17px;
+     position: absolute;
+     color: hsla(0, 0%, 65%, 0.856);
     }
   </style>
 </head>
@@ -117,10 +161,20 @@
       </div>
 
       <h1 class="sum">Summary</h1>
-      <div class="result1"><img src="C:\Users\you\Desktop\Git\ResultSummary\assets\images\icon-reaction.svg" alt=""><p>Reaction</p></div>
-      <div class="result2"><img src="C:\Users\you\Desktop\Git\ResultSummary\assets\images\icon-memory.svg" alt=""><p>Memory</p></div>
-      <div class="result3"><img src="C:\Users\you\Desktop\Git\ResultSummary\assets\images\icon-verbal.svg" alt=""><p>Verbal</p></div>
-      <div class="result4"><img src="C:\Users\you\Desktop\Git\ResultSummary\assets\images\icon-visual.svg" alt=""><p></p></div>
+      <div class="result1"><img src="C:\Users\you\Desktop\Git\ResultSummary\assets\images\icon-reaction.svg" alt="">
+        <p class="icon">Reaction</p><p class="mark">80</p><p class="outof">/ 100</p>
+      </div>
+      <div class="result2"><img src="C:\Users\you\Desktop\Git\ResultSummary\assets\images\icon-memory.svg" alt="">
+        <p class="icon">Memory</p><p class="mark">92</p><p class="outof">/ 100</p>
+      </div>
+      <div class="result3"><img src="C:\Users\you\Desktop\Git\ResultSummary\assets\images\icon-verbal.svg" alt="">
+        <p class="icon">Verbal</p><p class="mark">61</p><p class="outof">/ 100</p>
+      </div>
+      <div class="result4"><img src="C:\Users\you\Desktop\Git\ResultSummary\assets\images\icon-visual.svg" alt="">
+        <p class="icon">Visual</p><span><p class="mark">72</p><p class="outof">/ 100</p></span>
+      </div>
+
+        <button><p class="con">Continue</p></button>
     </div>
   </div>
 </body>
