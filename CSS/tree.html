@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one,.second,.third{
+            margin: auto;
+            border-radius: 50%;
+            background-color: green;
+            /* border: 2px solid black; */
+        }
+        .one{
+            height: 300px;
+            width: 300px;
+        }
+        .second{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            margin-top: 180px;
+            margin-left: -120px;
+        }
+        .third{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            margin-left: 250px;
+        }
+        .log{
+            height: 400px;
+            width: 100px;
+            position: absolute;
+            background-color: brown;
+            margin-left: 610px;
+            margin-top: 100px;
+        }
+        .apple{
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: red;
+            margin-left: 500px;
+            animation: apple 3s ;
+        }
+        @keyframes apple{
+            50%{
+                transform: translateY(300px);
+            }
+            100%{
+                transform: translateY(-500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="second">
+            <div class="third"></div>
+        </div>
+    </div>
+    <div class="log"></div>
+    <div class="apple"></div>
+</body>
+</html>

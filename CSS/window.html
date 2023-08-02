@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: auto;
+        }
+        p{
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+        .window{
+            width: 500px;
+            height: 100px;
+            background-color: black;
+        }
+        .one,.second{
+            width: 248px;
+            position: static;
+            height: 400px;
+            background-image:radial-gradient(30px,yellow,orange,yellow,orange,yellow,orange,yellow,orange);
+        }
+        .one:hover{
+            transform:skewY(30deg) translateY(80px) translateY(-10px);
+            transition: 2s ;
+        }
+        .second:hover{
+            transform: skewY(-28deg) translateY(80px) translateY(-14px);
+            transition: 2s ;
+        }
+    </style>
+</head>
+<body>
+    
+   <table>
+    <tr><td colspan="2"><div class="window">
+        <p>Hover door to open door</p>
+    </div></td></tr>
+    <tr class="trr">
+        <td><div class="one"></div></td>
+        <td><div class="second"></div></td>
+    </tr>
+   </table>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

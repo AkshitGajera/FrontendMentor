@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wall{
+            position: absolute;
+            height: 700px;
+            width: 300px;
+            transform: skewY(200deg);
+            background-image: linear-gradient(brown,white,brown,white,brown,white,
+            brown,white,brown,white,brown,white,brown,white,brown,white,
+            brown,white,brown,white,brown,white,brown,white);
+            margin-left: 1200px;
+            margin-top: 50px;
+        }
+        .ball{
+            position: absolute;
+            height: 100px;  
+            width: 100px;
+            border-radius: 50%;
+            border: 20px solid black;
+            background-color: greenyellow;
+            margin-top: 500px;
+            animation: ball 2s linear infinite;
+            
+        }
+        @keyframes ball{
+            50%{
+                transform:translateX(1300px) translateY(-300px) ;
+            }
+            100%{
+                transform: translateX(1000px)  translateY(90px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wall"></div>
+    <div class="ball"></div>
+</body>
+</html>

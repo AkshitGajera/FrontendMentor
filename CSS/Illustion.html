@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blue;
+        }
+        .second,.third,.fourth{
+            margin: auto;
+            position:absolute;
+            margin-left: 25px;
+            margin-top: 25px;
+            border-radius: 45%;
+            animation: circle 5s linear infinite;
+        }
+        .one{
+            height: 300px;
+            width: 300px;
+             background-color:  black;
+            margin: auto;
+            border-radius: 45%;
+            animation: circle 5s linear infinite;
+        }
+        .second{
+            background-color:white;
+            height: 250px;
+            width: 250px;
+        }
+        .third{
+            background-color: black;
+            height: 200px;
+            width: 200px;
+        }
+        .fourth{
+            background-color:white;
+            height: 150px;
+            width: 150px;
+        }
+        @keyframes circle{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="second">
+            <div class="third">
+                <div class="fourth">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            color: white;
+            margin: 30px;
+        }
+        button::after,button:before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            background-color: rgba(255, 0, 0, 0.486);
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            opacity: 1;
+        }
+
+        button:before{
+            animation: notification 2s ease-out infinite;
+        }
+        button:after{
+            animation: notification 2s 1s ease-out infinite;
+        }
+        @keyframes notification{
+            100%{
+                transform: scale(2.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button>
+        Bell
+    </button>
+</body>
+</html>

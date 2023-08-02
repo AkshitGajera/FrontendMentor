@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ambu{
+            height:100px;
+            width: 100px;
+            border: 1px solid red;
+            border-radius: 10%;
+            background-color: blue;
+            box-shadow: 0px 0px 50px blueviolet;
+            animation: ambu 6s;
+        }
+        @keyframes ambu{
+            25%{
+                transform: translateX(1300px) translateY(500px);
+            }
+            50%{
+                transform: translateY(500px);
+            }
+            75%{
+                transform: translateX(1300px) translateY(0px);
+            }
+            100%{
+                transform: translateY(500px) translateX(1300px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ambu"></div>
+</body>
+</html>

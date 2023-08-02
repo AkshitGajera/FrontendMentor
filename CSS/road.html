@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .road{
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.56),white,rgba(0, 0, 0, 0.56),rgba(0, 0, 0, 0.56),white,rgba(0, 0, 0, 0.56));
+            /* transform: skewX(50deg); */
+        }
+        .car{
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            border: 2px solid black;
+            border-radius: 10%;
+            animation: car 2s ;
+            /* background-image: conic-gradient(red,yellow); */
+        }
+        .truck{
+            margin-left: 1220px;
+            position: absolute;
+            height: 70px;
+            width: 130px;
+            border: 2px solid black;
+            border-radius: 10%;
+            animation: truck 2s ;
+        }
+        @keyframes car{
+            100%{
+                transform: translateX(575px);
+                background-color: red;
+            }
+        }
+        @keyframes truck{
+            100%{
+                transform: translateX(-600px);
+               
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="road"></div>
+    <div class="truck"></div>
+    <div class="car"></div>
+</body>
+</html>

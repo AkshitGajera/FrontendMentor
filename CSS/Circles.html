@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: black;
+        }
+        .one,.second,.third,.fourth,.fifth{
+            border: 1px solid white;
+            height: 500px;
+            width: 350px;
+            border-radius: 50%;
+            position: absolute;
+            animation: round 5s linear infinite;
+        }
+        .one:hover{
+            border: 1px solid red;
+        }
+        .second:hover{
+            border: 1px solid yellow;
+        }
+        .third:hover{
+            border: 1px solid greenyellow;
+        }
+        .fourth:hover{
+            border: 1px solid blue;
+        }
+        .fifth:hover{
+            border: 1px solid cyan;
+        }
+        .one{
+            margin-top: 5px;
+        }
+        .second{
+            margin-top: 5px;
+        }
+        .third{
+            margin-left: 5px;
+        }
+        .fourth{
+            margin-right: 5px;
+        }
+        .fifth{
+            margin-bottom: 5px;
+        }
+        @keyframes round{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="second">
+            <div class="third">
+                <div class="fourth">
+                    <div class="fifth"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+            position: relative;
+            margin: auto;
+            margin-top: 200px;
+            background-image: radial-gradient(red,brown);
+            animation: fan 1s linear infinite;
+        }
+        .container{
+            position:absolute;
+            overflow: hidden;
+            height: 500px;
+            width: 500px;
+            /* border: 1px solid black; */
+            margin-left: 429px;
+            margin-top: -300px;
+            animation: fan 1s linear infinite;
+        }
+        /* .container:hover{
+            transform: rotate(50deg);
+        } */
+        @keyframes fan{
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .one,.second,.third{
+            position: absolute;
+            height: 195px;
+            width: 50px;
+            border: 1px solid black;
+            background-image: linear-gradient(red,brown);
+        }
+        .one{
+            margin-left: 218px;
+            margin-top: 1px;
+        }
+        .second{
+            margin-top: 225px;
+            margin-left: 89px;
+            transform: rotate(60deg);
+        }
+        .third{
+            margin-top:225px ;
+            transform: rotate(-60deg);
+            margin-left:348px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="container">
+        <div class="one"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .textcontent{
+            position: absolute;
+            z-index: 10;
+            bottom: -100%;
+            background-color: rgba(128, 128, 128, 0.479);
+            transition: 0.5s;
+        }
+        .content{
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+        .content:hover .textcontent{
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="image.jpg" alt="">
+    
+
+    <div class="textcontent">
+        <div>Title</div>
+        <div><pre>Lorem ipsum dolor sitamet cons
+cteturadipisicing elit. Ipsa,
+eaque aliquid ex ea blanditiis
+ullam iusto, quis, ut doloresss</pre></div>
+    </div>
+</div>
+</body>
+</html>
