@@ -1,0 +1,113 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    font-family: verdana;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+
+.main{
+    height: 480px;
+    width: 300px;
+    border-radius: 5%;
+    position: absolute;
+    background-color: hsl(217, 54%, 10.5%);
+    /* filter: blur(2px); */
+    margin-left: 500px;
+    margin-top: 80px;
+}
+.main2{
+    height:460px;
+    width: 280px;
+    background-color: hsl(215, 52%, 10.25%);
+    border-radius: 5%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.container{
+    height:440px;
+    width: 260px;
+    background-color:hsl(216, 50%, 16%);
+    border-radius: 5%;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;  
+}
+img{
+    height: 220px;
+    width: 230px;
+    border-radius: 5%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.eq{
+    color: white;
+    margin-left: 15px;
+    font-weight: 700;
+}
+.para{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.342);
+    margin-left: 15px; 
+    /* font-weight:500; */
+}
+.ethereum{
+    height: 15px;
+    width: 10px;
+    margin-top: 7px;
+    position: absolute;
+    opacity: 70%;
+}
+.eth{
+    color: aqua;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 7px;
+    position: absolute;
+    opacity: 70%;
+}
+.clock{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 160px;
+    opacity: 50%;
+}
+.days{
+    color: rgba(255, 255, 255, 0.322);
+    font-size: 12px;
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 7px;
+}
+hr{
+    margin-top: 25px;
+    width: 220px;
+    opacity: 40%;
+}
+.profile{
+    height: 25px;
+    width: 25px;
+    border:1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 5px;
+}
+.create{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.397);
+    font-size: 11px;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+.jule{
+    position: absolute;
+    font-size: 12px;
+    margin-top:10px ;
+    color: white;
+    margin-left: 125px;
+}
